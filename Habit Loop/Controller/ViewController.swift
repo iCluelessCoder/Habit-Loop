@@ -10,23 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var numberOfStreaks = 0
+//updates Streak Count Label
+    var streakCount = 0 {
+        didSet {
+            streakCounter.text = "Streak: \(streakCount)"
+        }
+    }
+    
+    @IBOutlet var dayButtons: [UIButton]!
+    
+    var arrayOfDays = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th"]
+    
     
 //    Days Buttons -----------------------------------------
 
-    @IBAction func firstButtonPressed(_ sender: UIButton) {
-        numberOfStreaks += 1
-        updateStreakLabel()
-    }
-    
-    @IBAction func secondButtonPressed(_ sender: UIButton) {
-        numberOfStreaks += 1
-        updateStreakLabel()
-    }
-    
-    @IBAction func thirdButtonPressed(_ sender: UIButton) {
-        numberOfStreaks += 1
-        updateStreakLabel()
+    @IBAction func dayCompleted(_ sender: UIButton) {
+        streakCount += 1
+        if let dayNumber = dayButtons.firstIndex(of: sender) {
+            
+        }
+        
     }
     
 //    UI Labels -----------------------------------------
@@ -34,7 +37,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var streakCounter: UILabel!
     
     @IBAction func resetStreakButton(_ sender: UIButton) {
-        numberOfStreaks = 0
+        streakCount = 0
         streakCounter.text = "No Streak!"
     }
     
@@ -42,13 +45,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
-//updates Streak Count Label
-    
-    func updateStreakLabel() {
-        streakCounter.text = "\(numberOfStreaks)"
-    }
-    
     
 }
 

@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-qj-KSU">
-                                <rect key="frame" x="375" y="59" width="39" height="30"/>
+                                <rect key="frame" x="359" y="59" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetStreakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8x-J6-sN8"/>
@@ -40,40 +40,53 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdY-vx-yV2">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="1st"/>
                                                 <connections>
-                                                    <action selector="firstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubt-9d-Ytw"/>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukf-yF-ZIN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nc-4G-YBu">
                                                 <rect key="frame" x="50" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="2nd"/>
                                                 <connections>
-                                                    <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCr-Fn-QAR"/>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u4N-3e-wRA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcE-ra-usW">
                                                 <rect key="frame" x="100" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="3rd"/>
                                                 <connections>
-                                                    <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Fn-rk-gDc"/>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O11-mT-OJ7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-nV-Cwg">
                                                 <rect key="frame" x="150" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="4th"/>
+                                                <connections>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbc-XO-Esb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kI-36-0uX">
                                                 <rect key="frame" x="200" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="5th"/>
+                                                <connections>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOF-iE-UMN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDW-9E-nB9">
                                                 <rect key="frame" x="250" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="6th"/>
+                                                <connections>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovk-6t-hbO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-TT-Pcb">
                                                 <rect key="frame" x="300" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="7th"/>
+                                                <connections>
+                                                    <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RT8-Re-S7g"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -199,7 +212,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H5i-6T-fnJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="2Cs-8K-d5a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SsU-qj-KSU" secondAttribute="trailing" id="8He-dU-Yxe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SsU-qj-KSU" secondAttribute="trailing" constant="16" id="8He-dU-Yxe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H5i-6T-fnJ" secondAttribute="trailing" constant="15" id="DiX-zE-DZ9"/>
                             <constraint firstItem="H5i-6T-fnJ" firstAttribute="top" secondItem="SsU-qj-KSU" secondAttribute="bottom" constant="15" id="nKz-3a-lHT"/>
                             <constraint firstItem="SsU-qj-KSU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="vPS-cb-lk0"/>
@@ -208,6 +221,13 @@
                     </view>
                     <connections>
                         <outlet property="streakCounter" destination="iFH-5Z-t6B" id="xRM-Ka-HRA"/>
+                        <outletCollection property="dayButtons" destination="xdY-vx-yV2" collectionClass="NSMutableArray" id="66I-Z3-thh"/>
+                        <outletCollection property="dayButtons" destination="2Nc-4G-YBu" collectionClass="NSMutableArray" id="o1M-CO-Vrp"/>
+                        <outletCollection property="dayButtons" destination="wcE-ra-usW" collectionClass="NSMutableArray" id="0gf-3z-UV1"/>
+                        <outletCollection property="dayButtons" destination="Eog-nV-Cwg" collectionClass="NSMutableArray" id="r2l-OQ-dMe"/>
+                        <outletCollection property="dayButtons" destination="2kI-36-0uX" collectionClass="NSMutableArray" id="nnn-Vg-Zqf"/>
+                        <outletCollection property="dayButtons" destination="dDW-9E-nB9" collectionClass="NSMutableArray" id="OlE-DX-nP5"/>
+                        <outletCollection property="dayButtons" destination="pEQ-TT-Pcb" collectionClass="NSMutableArray" id="ZBa-LJ-41r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
