@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         }
     }
     
+    var dayCompletStatus = false
+    
     @IBOutlet var dayButtons: [UIButton]!
     
     var arrayOfDays = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th"]
@@ -25,9 +27,12 @@ class ViewController: UIViewController {
 //    Days Buttons -----------------------------------------
 
     @IBAction func dayCompleted(_ sender: UIButton) {
+        
         streakCount += 1
+
         if let dayNumber = dayButtons.firstIndex(of: sender) {
             completeDay(dayOfTheMonth: arrayOfDays[dayNumber], on: sender)
+            
         } else {
             print("chosen day was not in dayButtons")
         }
