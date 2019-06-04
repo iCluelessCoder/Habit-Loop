@@ -32,6 +32,7 @@ class ViewController: UIViewController {
 
         if let dayNumber = dayButtons.firstIndex(of: sender) {
             completeDay(dayOfTheMonth: arrayOfDays[dayNumber], on: sender)
+            print("Index of the day selected is: \(dayNumber)")
             
         } else {
             print("chosen day was not in dayButtons")
