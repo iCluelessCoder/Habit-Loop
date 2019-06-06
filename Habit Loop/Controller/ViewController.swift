@@ -19,6 +19,15 @@ class ViewController: UIViewController {
     
 //    UI Labels -----------------------------------------
     
+    @IBAction func streakResetButton(_ sender: UIButton) {
+        streakCount = 0
+        dayCompletedLabel.backgroundColor = #colorLiteral(red: 0.6189721823, green: 0.6221218109, blue: 1, alpha: 1)
+        dayCompletedLabel.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
+    
+    @IBOutlet weak var dayCompletedLabel: UIButton!
+    
+    
     @IBOutlet weak var streakCounter: UILabel!
     
 //    UI Buttons ----------------------------------------

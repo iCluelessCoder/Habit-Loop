@@ -28,11 +28,19 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-qj-KSU">
                                 <rect key="frame" x="359" y="59" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="streakResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pb-Er-dZ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYs-07-KkM">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <rect key="frame" x="104" y="426" width="207" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.53333333329999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="Complete Today">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="dayCompleted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bi-rK-HxB"/>
                                 </connections>
@@ -46,6 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dayCompletedLabel" destination="QYs-07-KkM" id="KPI-9q-Onh"/>
                         <outlet property="streakCounter" destination="iFH-5Z-t6B" id="xRM-Ka-HRA"/>
                     </connections>
                 </viewController>
