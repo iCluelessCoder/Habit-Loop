@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     
     @IBAction func dayCompleted(_ sender: UIButton) {
         streakCount += 1
+        dayCompletedLabel.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        dayCompletedLabel.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
     
     override func viewDidLoad() {
