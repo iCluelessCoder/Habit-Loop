@@ -23,10 +23,12 @@ class ViewController: UIViewController {
         streakCount = 0
         dayCompletedLabel.backgroundColor = #colorLiteral(red: 0.6189721823, green: 0.6221218109, blue: 1, alpha: 1)
         dayCompletedLabel.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        habitFinishedLabel.image = nil
     }
     
     @IBOutlet weak var dayCompletedLabel: UIButton!
     
+    @IBOutlet weak var habitFinishedLabel: UIImageView!
     
     @IBOutlet weak var streakCounter: UILabel!
     
@@ -36,6 +38,7 @@ class ViewController: UIViewController {
         streakCount += 1
         dayCompletedLabel.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         dayCompletedLabel.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        habitFinishedLabel.image = #imageLiteral(resourceName: "habitFinishedCheckImage")
     }
     
     override func viewDidLoad() {
@@ -44,4 +47,3 @@ class ViewController: UIViewController {
     }
     
 }
-
