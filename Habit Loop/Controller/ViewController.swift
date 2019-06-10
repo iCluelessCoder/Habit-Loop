@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dayCompletedLabel: UIButton!
     
+    
     @IBOutlet weak var habitFinishedLabel: UIImageView!
     
     @IBOutlet weak var streakCounter: UILabel!
@@ -43,6 +44,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dayCompletedLabel.layer.cornerRadius = 20.0
 
     }
     
